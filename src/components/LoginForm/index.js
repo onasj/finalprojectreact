@@ -8,7 +8,7 @@ export default function LoginForm( {submitFunction} ) {
 			<input type="email" name="loginEmail" placeholder="email"/>
 			<label for="loginPassword"> Password</label>
 			<input type="password" name="loginPassword" placeholder="password"/>
-			<button className="btn pink lighten-1">Login</button>
+			<button className="btn #ffe135">Login</button>
 		</form>
 	</div>
 }

@@ -7,7 +7,7 @@ export default function CreateAccountForm( {submitFunction} ) {
 			<input type="email" name="createEmail" placeholder="email"/>
 			<label for="Create Password"> Password</label>
 			<input type="password" name="createPassword" placeholder="password"/>
-			<button className="btn pink lighten-1">SignUp</button>
+			<button className="btn #ffe135">SignUp</button>
 		</form>
 	</div>
 }

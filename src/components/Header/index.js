@@ -4,7 +4,7 @@ export default function Header({loggedIn, logoutFunction}) {
 	return (
 	<header className="Header">
 		<nav>
-			{loggedIn && <a href="/">Home</a>}
+			{loggedIn && <a href="/">User</a>}
 			{loggedIn && <a href="/dashboard">Dashboard</a>}
 			{loggedIn && <a href="/createpost">Create Post</a>}
 			{!loggedIn && <a href="/login">Log In</a>}
