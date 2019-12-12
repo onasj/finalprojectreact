@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PostPart from '../PostPart'
 
 class PostCard extends Component {
 
@@ -10,19 +11,16 @@ class PostCard extends Component {
 	}
 
 	componentDidMount() {
-		fetch("https://excercise-four.herokuapp.com/")
+		fetch("https://finalprojectnodeapi.herokuapp.com/")
 			.then(res => res.json())
 			.then(posts => this.setState({posts}, () => console.log('Thing fetched', posts)))
 	}
 	render() {
 		return (
 			<div>
-				<h1>Posts</h1>
-				<ul>
-					{this.state.posts.map(post => 
-						<li key={post.id}>{ post.author } { post.text } { post.title }</li>
-					)}
-				</ul>
+				{this.state.posts.map(post => 
+					<PostPart post={post} key={post.id} />
+				)} 
 			</div>
 		);
 	}
