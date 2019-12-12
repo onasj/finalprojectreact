@@ -11,16 +11,17 @@ import Signup from "./pages/Signup"
 import Logout from "./pages/Logout"
 import Header from "./components/Header"
 import Dashboard from "./pages/Dashboard"
+import CreatePost from "./pages/CreatePost"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCaxSy0Z6JC91BCQy9C0JHCSgY1GUXoa_g",
-  authDomain: "excercise-5.firebaseapp.com",
-  databaseURL: "https://excercise-5.firebaseio.com",
-  projectId: "excercise-5",
-  storageBucket: "excercise-5.appspot.com",
-  messagingSenderId: "186420722192",
-  appId: "1:186420722192:web:41e5ddb0ba88e55c1ea895",
-  measurementId: "G-RSMHTSNMNR"
+  apiKey: "AIzaSyDwgee5MWtC208j18BZtMrI9m3lINIwypE",
+  authDomain: "dynamic-web-final-a8d2a.firebaseapp.com",
+  databaseURL: "https://dynamic-web-final-a8d2a.firebaseio.com",
+  projectId: "dynamic-web-final-a8d2a",
+  storageBucket: "dynamic-web-final-a8d2a.appspot.com",
+  messagingSenderId: "715674027548",
+  appId: "1:715674027548:web:ef34c9a9703e539b1541d9",
+  measurementId: "G-T6M3XC2PV4"
 };
 
 function App() {
@@ -111,6 +112,7 @@ function App() {
           { loggedIn ? <Redirect to="/" /> : <Login loginFunction={loginFunction} /> }
         </Route>
         <Route exact path="/dashboard" component={Dashboard}/>
+        <Route path="/createpost" component={CreatePost}/>
       </Router>
     </div>
   );
