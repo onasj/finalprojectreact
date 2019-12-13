@@ -12,6 +12,7 @@ import Logout from "./pages/Logout"
 import Header from "./components/Header"
 import Dashboard from "./pages/Dashboard"
 import CreatePost from "./pages/CreatePost"
+import axios from 'axios';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDwgee5MWtC208j18BZtMrI9m3lINIwypE",
